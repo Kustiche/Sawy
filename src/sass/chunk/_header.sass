@@ -1,0 +1,53 @@
+.header
+  padding: 15px 0
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 415px
+    width: 100%
+
+  &__room
+    font-family: "OpenSans-Bold", sans-serif
+    font-weight: 700
+    line-height: 22px
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 0
+      border-top: 2px solid $addey
+      top: 85%
+      right: 0
+      transition: all .4s
+    &:hover
+      &::after
+        width: 100%
+        left: 0
+
+  &__interactive
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 245px
+    width: 100%
+
+  &__search
+    width: 28px
+    height: 28px
+    fill: $dodger-blue
+    transition: transform .4s
+    &:hover
+      transform: scale(.90)
+
+  &__link
+    padding: 5px 10px
+    box-shadow: 0px 4px 20px rgba(62, 137, 244, 0.3)
+    letter-spacing: 0.03em
+    text-transform: uppercase
