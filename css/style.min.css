@@ -4374,6 +4374,20 @@ body {
 .about__img {
   width: 84px;
   height: 84px;
+  background-image: url(../img/svg/social.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 26px;
+}
+.about__img--handshake {
+  background-image: url(../img/svg/handshake.svg);
+}
+.about__img--rocket {
+  background-image: url(../img/svg/rocket.svg);
+}
+.about__img--star {
+  background-image: url(../img/svg/star.svg);
 }
 .about__list {
   margin-left: 15px;
