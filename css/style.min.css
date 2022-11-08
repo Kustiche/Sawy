@@ -4394,4 +4394,102 @@ body {
 .about__item--circle-below::before {
   top: 40%;
 }
+
+.process {
+  padding: 50px 0;
+  background-color: #F6F6F6;
+}
+.process__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.process__title {
+  margin-bottom: 15px;
+  color: #2C3136;
+}
+.process__heading {
+  margin-bottom: 50px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+  color: #3E89F4;
+}
+.process__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.process__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 285px;
+  width: 100%;
+}
+.process__img {
+  width: 40px;
+  height: 52px;
+  background-image: url(../img/svg/document.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.process__img--shield {
+  width: 44px;
+  background-image: url(../img/svg/shield.svg);
+}
+.process__img--scales {
+  width: 52px;
+  height: 40px;
+  background-image: url(../img/svg/scales.svg);
+}
+.process__img--money {
+  width: 52px;
+  height: 45px;
+  background-image: url(../img/svg/money.svg);
+}
+.process__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 225px;
+}
+.process__caption {
+  margin-bottom: 10px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2C3136;
+}
+.process__text {
+  font-size: 15px;
+  line-height: 150%;
+}
 /*# sourceMappingURL=style.min.css.map */
