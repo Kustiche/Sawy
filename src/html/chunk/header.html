@@ -1,39 +1,68 @@
 <header class="header">
 	<div class="container">
 		<div class="header__wrap">
-			<a class="logo">
-				<svg class="logo__img">
-					<use xlink:href="img/svg/sprite.svg#logo"></use>
-				</svg>
-			</a>
-			<nav class="nav">
+			<div class="header__content">
+				<a class="logo">
+					<svg class="logo__img logo__img--header">
+						<use xlink:href="img/svg/sprite.svg#logo"></use>
+					</svg>
+					<svg class="logo__img-already">
+						<use xlink:href="img/svg/sprite.svg#logo-already"></use>
+					</svg>
+				</a>
+				<nav class="nav nav--header">
+					<ul class="nav__menu menu list-reset">
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#/">Все объявления</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#/">Подать объявление</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#/">Помощь</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__inner">
+					<a class="header__room link-reset" href="tel:+88000000000"
+						>8 800 000 00 00</a
+					>
+					<a
+						class="header__icon-link header__icon-link--phone link-reset"
+						href="tel:+88000000000"
+					></a>
+					<div class="header__interactive">
+						<a
+							class="header__icon-link link-reset"
+							href="#/"
+							target="_blank"
+						></a>
+						<a
+							class="header__icon-link header__icon-link--user link-reset"
+							href="#/"
+						></a>
+						<a
+							class="header__link link-blue link-reset"
+							href="#/"
+							target="_blank"
+							>Зарегистрироваться</a
+						>
+					</div>
+				</div>
+			</div>
+			<nav class="nav nav--bottom">
 				<ul class="nav__menu menu list-reset">
-					<li class="menu__item">
+					<li class="menu__item menu__item--less">
 						<a class="menu__link link-reset" href="#/">Все объявления</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item menu__item--less">
 						<a class="menu__link link-reset" href="#/">Подать объявление</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item menu__item--less">
 						<a class="menu__link link-reset" href="#/">Помощь</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="header__inner">
-				<a class="header__room link-reset" href="tel:+88000000000"
-					>8 800 000 00 00</a
-				>
-				<div class="header__interactive">
-					<a class="header__search-link link-reset" href="#/">
-						<svg class="header__search">
-							<use xlink:href="img/svg/sprite.svg#search"></use>
-						</svg>
-					</a>
-					<a class="header__link link-blue link-reset" href="#/" target="_blank"
-						>Зарегистрироваться</a
-					>
-				</div>
-			</div>
 		</div>
 	</div>
 </header>

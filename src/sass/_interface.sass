@@ -5,8 +5,28 @@
     width: 288px
     height: 27px
     fill: $outer-space
+    &--header
+      @media screen and ( max-width: 485px )
+        display: none
+
     &--white
       fill: $white
+
+  &__img-already
+    display: none
+    @media screen and ( max-width: 485px )
+      width: 145px
+      height: 38px
+      display: inline-block
+
+.nav
+  &--header
+    @media screen and ( max-width: 1095px )
+      display: none
+  &--bottom
+    display: none
+    @media screen and ( max-width: 1095px )
+      display: inline-block
 
 .menu
   display: flex
@@ -14,18 +34,25 @@
 
   &__item
     margin-right: 20px
-    line-height: 22px
+    line-height: 0
     color: $outer-space
     transition: color .4s
     &:hover
       color: $dodger-blue
     &:last-child
       margin-right: 0
+    &--less
+      @media screen and ( max-width: 400px )
+        margin-right: 10px
+        font-size: 13px
     &--white
       margin-right: 25px
       color: $white
       &:hover
         color: $white
+
+  &__link
+    line-height: 22px
 
 .link-blue
   padding: 20px 30px
