@@ -406,7 +406,22 @@ body {
   }
 }
 .logo__img--white {
+  width: 260px;
+  height: 25px;
   fill: #FFFFFF;
+}
+@media screen and (max-width: 860px) {
+  .logo__img--white {
+    width: 215px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .logo__img--white {
+    width: 260px;
+    height: 25px;
+    margin-bottom: 30px;
+  }
 }
 .logo__img-already {
   display: none;
@@ -441,6 +456,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 740px) {
+  .menu--bottom {
+    max-width: 300px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px 0;
+  }
+}
 .menu__item {
   margin-right: 20px;
   line-height: 0;
@@ -467,6 +493,19 @@ body {
 }
 .menu__item--white:hover {
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .menu__item--white {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .menu__item--white {
+    margin-right: 15px;
+  }
+  .menu__item--white:nth-child(2) {
+    margin-right: 0;
+  }
 }
 .menu__link {
   line-height: 22px;
@@ -5135,6 +5174,13 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 740px) {
+  .footer__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5149,6 +5195,20 @@ body {
   width: 100%;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 768px) {
+  .footer__content {
+    margin-bottom: 95px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 35px;
+  }
+}
 .footer__policy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5162,10 +5222,29 @@ body {
   max-width: 695px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .footer__policy {
+    max-width: 470px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer__policy {
+    max-width: 215px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__copyright {
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 425px) {
+  .footer__copyright {
+    margin-bottom: 15px;
+  }
 }
 .footer__link {
   font-size: 12px;
