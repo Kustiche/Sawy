@@ -6,6 +6,8 @@
     display: flex
     flex-direction: column
     align-items: flex-start
+    @media screen and ( max-width: 740px )
+      align-items: center
 
   &__content
     display: flex
@@ -14,6 +16,11 @@
     max-width: 855px
     width: 100%
     margin-bottom: 100px
+    @media screen and ( max-width: 768px )
+      margin-bottom: 95px
+    @media screen and ( max-width: 740px )
+      flex-direction: column
+      margin-bottom: 35px
 
   &__policy
     display: flex
@@ -21,11 +28,18 @@
     align-items: center
     max-width: 695px
     width: 100%
+    @media screen and ( max-width: 768px )
+      max-width: 470px
+    @media screen and ( max-width: 425px )
+      max-width: 215px
+      flex-direction: column
 
   &__copyright
     font-size: 12px
     line-height: 16px
     color: $white
+    @media screen and ( max-width: 425px )
+      margin-bottom: 15px
 
   &__link
     font-size: 12px

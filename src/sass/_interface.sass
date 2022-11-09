@@ -8,9 +8,17 @@
     &--header
       @media screen and ( max-width: 485px )
         display: none
-
     &--white
+      width: 260px
+      height: 25px
       fill: $white
+      @media screen and ( max-width: 860px )
+        width: 215px
+        height: 20px
+      @media screen and ( max-width: 740px )
+        width: 260px
+        height: 25px
+        margin-bottom: 30px
 
   &__img-already
     display: none
@@ -31,6 +39,12 @@
 .menu
   display: flex
   align-items: center
+  &--bottom
+    @media screen and ( max-width: 740px )
+      max-width: 300px
+      flex-wrap: wrap
+      justify-content: center
+      gap: 20px 0
 
   &__item
     margin-right: 20px
@@ -50,6 +64,12 @@
       color: $white
       &:hover
         color: $white
+      @media screen and ( max-width: 768px )
+        margin-right: 20px
+      @media screen and ( max-width: 740px )
+        margin-right: 15px
+        &:nth-child(2)
+          margin-right: 0
 
   &__link
     line-height: 22px
