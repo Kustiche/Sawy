@@ -5,7 +5,7 @@
     padding-top: 30px
     padding-bottom: 40px
     @media screen and ( max-width: 540px )
-      padding: 25px
+      padding: 25px 0
 
   &__wrap
     display: flex
@@ -53,6 +53,10 @@
     align-items: flex-start
     max-width: 245px
     width: 100%
+    @media screen and ( max-width: 540px )
+      max-width: 375px
+    @media screen and ( max-width: 375px )
+      max-width: 245px
 
   &__img
     width: 40px
@@ -61,23 +65,51 @@
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+    @media screen and ( max-width: 540px )
+      width: 60px
+      height: 72px
+    @media screen and ( max-width: 375px )
+      width: 40px
+      height: 52px
     &--shield
       width: 44px
       background-image: url(../img/svg/shield.svg)
+      @media screen and ( max-width: 540px )
+        width: 62px
+        height: 72px
+      @media screen and ( max-width: 375px )
+        width: 44px
+        height: 52px
     &--scales
       width: 52px
       height: 40px
       background-image: url(../img/svg/scales.svg)
+      @media screen and ( max-width: 540px )
+        width: 74px
+        height: 60px
+      @media screen and ( max-width: 375px )
+        width: 52px
+        height: 40px
     &--money
       width: 52px
       height: 45px
       background-image: url(../img/svg/money.svg)
+      @media screen and ( max-width: 540px )
+        width: 72px
+        height: 65px
+      @media screen and ( max-width: 375px )
+        width: 52px
+        height: 45px
 
   &__content
     display: flex
     flex-direction: column
     align-items: flex-start
     max-width: 185px
+    @media screen and ( max-width: 540px )
+      max-width: 260px
+    @media screen and ( max-width: 375px )
+      max-width: 185px
 
   &__caption
     margin-bottom: 10px
