@@ -21,7 +21,6 @@
   &__inner
     display: flex
     flex-direction: column
-    align-items: center
     width: 100%
     @media screen and ( max-width: 705px )
       flex-direction: row
@@ -71,10 +70,12 @@
       margin-bottom: 20px
 
   &__heading
-    max-width: 195px
+    max-width: 230px
     font-size: 21px
     line-height: 150%
     color: $black
+    @media screen and ( max-width: 768px )
+      max-width: 195px
     @media screen and ( max-width: 705px )
       font-size: 18px
 
