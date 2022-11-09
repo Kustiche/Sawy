@@ -4379,7 +4379,7 @@ body {
 }
 
 .hero {
-  padding-top: 60px 0;
+  padding-top: 60px;
   background-image: url(../img/hero/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -4387,12 +4387,12 @@ body {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    padding: 40px 0;
+    padding-top: 40px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 425px) {
   .hero {
-    padding: 20px 0;
+    padding-top: 20px;
   }
 }
 .hero__wrap {
@@ -4578,6 +4578,11 @@ body {
 .about {
   padding: 100px 0;
 }
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 40px 0;
+  }
+}
 .about__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4593,34 +4598,70 @@ body {
 .about__title {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .about__title {
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__title {
+    font-size: 26px;
+    line-height: 120%;
+  }
+}
 .about__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
-.about__card {
+@media screen and (max-width: 705px) {
+  .about__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-y: hidden;
+  }
+}
+.about__card-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 40px;
-  max-width: 584px;
-  width: 100%;
-  min-height: 280px;
-  border: 1px solid #F0F0F0;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  margin-bottom: 30px;
+  gap: 0 30px;
 }
-.about__content {
+.about__card-inner:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .about__card-inner {
+    margin-bottom: 20px;
+    gap: 0 20px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .about__card-inner {
+    margin-bottom: 0;
+    gap: 0 10px;
+  }
+}
+.about__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4631,13 +4672,67 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 330px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 40px;
+  max-width: 584px;
+  width: 100%;
+  min-height: 325px;
+  border: 1px solid #F0F0F0;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .about__card {
+    padding: 20px;
+    max-width: 365px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .about__card {
+    max-width: 310px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about__content {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .about__content {
+    margin-bottom: 20px;
+  }
 }
 .about__heading {
-  margin-bottom: 15px;
+  max-width: 195px;
   font-size: 21px;
   line-height: 150%;
   color: #000000;
+}
+@media screen and (max-width: 705px) {
+  .about__heading {
+    font-size: 18px;
+  }
+}
+.about__text {
+  max-width: 355px;
+}
+@media screen and (max-width: 705px) {
+  .about__text {
+    font-size: 15px;
+  }
 }
 .about__img {
   width: 84px;
@@ -4659,6 +4754,7 @@ body {
 }
 .about__list {
   margin-left: 15px;
+  max-width: 355px;
 }
 .about__item {
   position: relative;
