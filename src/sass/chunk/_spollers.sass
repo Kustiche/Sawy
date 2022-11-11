@@ -1,0 +1,55 @@
+.spollers
+  &__item
+    margin-bottom: 10px
+    padding: 25px 0
+    padding-left: 70px
+    background-color: transparent
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    &::after
+      position: absolute
+      content: ""
+      width: 100%
+      border-top: 1px solid $black
+      opacity: 0.1
+      bottom: 0
+      left: 0
+
+  &__title
+    font-family: "Raleway-Medium", sans-serif
+    font-weight: 500
+    font-size: 22px
+    line-height: 130%
+    position: relative
+    width: 100%
+    text-align: left
+    color: $cobalt
+
+  &__text
+    padding-top: 5px
+    line-height: 130%
+    color: $cobalt
+
+  &.init .spollers__title::before,
+  &.init .spollers__title::after
+    content: ''
+    position: absolute
+    left: -40px
+    top: 15px
+    width: 15px
+    border-top: 2px solid $cobalt
+    transition: transform 0.3s ease 0s
+
+  &.init .spollers__title::after
+    left: -49px
+    transform: rotate(45deg)
+
+  &.init .spollers__title.active::after
+    transform: rotate(-45deg)
+
+  &.init .spollers__title::before
+    transform: rotate(-45deg)
+
+  &.init .spollers__title.active::before
+    transform: rotate(45deg)
