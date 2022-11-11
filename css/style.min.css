@@ -539,6 +539,42 @@ body {
   margin: 0;
 }
 
+.input {
+  all: unset;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.radio {
+  all: unset;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+.radio--man:checked + .registration-hero__text--man {
+  color: #000000;
+}
+.radio--woman:checked + .registration-hero__text--woman {
+  color: #000000;
+}
+.radio--married:checked + .registration-hero__text--married {
+  color: #000000;
+}
+.radio--unmarried:checked + .registration-hero__text--unmarried {
+  color: #000000;
+}
+
+.radio:checked {
+  background-color: #3E89F4;
+  border: 2px solid #B6D4FF;
+}
+
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -5115,7 +5151,7 @@ body {
   transition: background-color 0.4s;
 }
 .news__link:hover {
-  color: #2C3136;
+  color: inherit;
 }
 .news__link:hover::after {
   background-color: #2C3136;
@@ -5213,5 +5249,205 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.registration-hero {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.registration-hero__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.registration-hero__title {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+}
+.registration-hero__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.registration-hero__avatar {
+  margin-right: 70px;
+  width: 220px;
+  height: 220px;
+}
+.registration-hero__file {
+  width: 220px;
+  height: 220px;
+  border: 1px solid #D6D6D6;
+  outline: none;
+}
+.registration-hero__text {
+  line-height: 120%;
+}
+.registration-hero__text--grey {
+  color: #757575;
+}
+.registration-hero__text--man {
+  margin-right: 25px;
+}
+.registration-hero__text--married {
+  margin-right: 25px;
+}
+.registration-hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 525px;
+  width: 100%;
+}
+.registration-hero__heading {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 130%;
+  color: inherit;
+}
+.registration-hero__heading--no-margin {
+  margin-bottom: 0;
+}
+.registration-hero__heading--citizenship-arrow {
+  position: relative;
+}
+.registration-hero__heading--citizenship-arrow::after, .registration-hero__heading--citizenship-arrow::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  border-top: 1px solid #54585D;
+  top: 60px;
+  left: 545px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__heading--citizenship-arrow::before {
+  top: 60px;
+  left: 555px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__heading--region-arrow {
+  position: relative;
+}
+.registration-hero__heading--region-arrow::after, .registration-hero__heading--region-arrow::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  border-top: 1px solid #54585D;
+  top: 60px;
+  left: 545px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__heading--region-arrow::before {
+  top: 60px;
+  left: 555px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__floor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 155px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.registration-hero__family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 395px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.registration-hero__citizenship:checked .registration-hero__heading--citizenship-arrow::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__citizenship:checked .registration-hero__heading--citizenship-arrow::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__region:checked .registration-hero__heading--region-arrow::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__region:checked .registration-hero__heading--region-arrow::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 295px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.registration-hero__btn {
+  color: #3E89F4;
+  position: relative;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.registration-hero__btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 1px solid #3E89F4;
+  top: 80%;
+  left: 0;
+  -webkit-transition: border-top 0.4s;
+  -o-transition: border-top 0.4s;
+  transition: border-top 0.4s;
+}
+.registration-hero__btn:hover {
+  color: inherit;
+}
+.registration-hero__btn:hover::after {
+  border-top: 1px solid inherit;
 }
 /*# sourceMappingURL=style.min.css.map */
