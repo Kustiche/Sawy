@@ -5036,7 +5036,7 @@ body {
 @media screen and (max-width: 768px) {
   .news {
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 .news__wrap {
@@ -5161,6 +5161,12 @@ body {
 .questions {
   padding-top: 50px;
   padding-bottom: 150px;
+}
+@media screen and (max-width: 768px) {
+  .questions {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 .questions__wrap {
   display: -webkit-box;
