@@ -1,0 +1,143 @@
+.registration-hero
+  padding-top: 100px
+  padding-bottom: 150px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+
+  &__title
+    font-family: "OpenSans-Bold", sans-serif
+    font-weight: 700
+    font-size: 32px
+    line-height: 44px
+    color: $black
+
+  &__form
+    display: flex
+    width: 100%
+
+  &__avatar
+    margin-right: 70px
+    width: 220px
+    height: 220px
+
+  &__file
+    width: 220px
+    height: 220px
+    border: 1px solid $alto
+    outline: none
+
+  &__user-photo
+
+  &__text
+    line-height: 120%
+    &--grey
+      color: $boulder
+    &--man
+      margin-right: 25px
+    &--married
+      margin-right: 25px
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 525px
+    width: 100%
+
+  &__heading
+    margin-bottom: 10px
+    font-size: 18px
+    line-height: 130%
+    color: inherit
+    &--no-margin
+      margin-bottom: 0
+    &--citizenship-arrow
+      position: relative
+      &::after, &::before
+        position: absolute
+        content: ""
+        width: 13px
+        border-top: 1px solid $addey
+        top: 60px
+        left: 545px
+        z-index: 1
+        transform: rotate(45deg)
+      &::before
+        top: 60px
+        left: 555px
+        transform: rotate(-45deg)
+    &--region-arrow
+      position: relative
+      &::after, &::before
+        position: absolute
+        content: ""
+        width: 13px
+        border-top: 1px solid $addey
+        top: 60px
+        left: 545px
+        z-index: 1
+        transform: rotate(45deg)
+      &::before
+        top: 60px
+        left: 555px
+        transform: rotate(-45deg)
+
+  &__floor
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 155px
+    width: 100%
+    margin-bottom: 30px
+
+  &__date
+
+  &__family
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 395px
+    width: 100%
+    margin-bottom: 30px
+
+  &__citizenship:checked .registration-hero__heading--citizenship-arrow
+    &::after
+      transform: rotate(45deg)
+    &::before
+      transform: rotate(-45deg)
+
+  &__region:checked .registration-hero__heading--region-arrow
+    &::after
+      transform: rotate(45deg)
+    &::before
+      transform: rotate(-45deg)
+
+  &__email
+
+  &__phone
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    max-width: 295px
+    width: 100%
+    margin-bottom: 10px
+
+  &__btn
+    color: $dodger-blue
+    position: relative
+    transition: color .4s
+    &::after
+      position: absolute
+      content: ""
+      width: 100%
+      border-top: 1px solid $dodger-blue
+      top: 80%
+      left: 0
+      transition: border-top .4s
+    &:hover
+      color: inherit
+      &::after
+        border-top: 1px solid inherit

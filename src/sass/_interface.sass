@@ -95,3 +95,36 @@
 
 .text
   margin: 0
+
+.input
+  all: unset
+  margin-bottom: 30px
+  padding: 15px 30px
+  width: 100%
+  background-color: $wild-sand-light
+  border-radius: 10px
+  cursor: pointer
+
+.radio
+  all: unset
+  width: 20px
+  height: 20px
+  cursor: pointer
+  border: 2px solid $black
+  border-radius: 50%
+
+  &--man:checked + .registration-hero__text--man
+    color: $black
+
+  &--woman:checked + .registration-hero__text--woman
+    color: $black
+
+  &--married:checked + .registration-hero__text--married
+    color: $black
+
+  &--unmarried:checked + .registration-hero__text--unmarried
+    color: $black
+
+.radio:checked
+  background-color: $dodger-blue
+  border: 2px solid $periwinkle

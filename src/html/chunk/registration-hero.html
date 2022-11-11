@@ -1,0 +1,189 @@
+<section class="registration-hero">
+	<div class="container">
+		<div class="registration-hero__wrap">
+			<h1 class="registration-hero__title title">Регистрация заемщик</h1>
+			<form class="registration-hero__form" action="URL" autocomplete="on">
+				<label class="registration-hero__avatar">
+					<input class="registration-hero__file" name="file" type="file" />
+					<svg class="registration-hero__user-photo">
+						<use href="img/sprite.svg#user-photo"></use>
+					</svg>
+					<span
+						class="registration-hero__text registration-hero__text--grey text"
+						>Загрузить фото</span
+					>
+				</label>
+				<div class="registration-hero__content">
+					<label class="registration-hero__heading title" for="login"
+						>Логин*</label
+					>
+					<input
+						class="registration-hero__login input"
+						id="login"
+						type="text"
+						placeholder="Michael22"
+					/>
+					<label class="registration-hero__heading title">Пол*</label>
+					<div class="registration-hero__floor">
+						<input
+							class="radio radio--man"
+							id="man"
+							name="floor"
+							type="radio"
+							value="Муж"
+						/>
+						<label
+							class="registration-hero__text registration-hero__text--man"
+							for="man"
+							>Муж</label
+						>
+						<input
+							class="radio radio--woman"
+							id="woman"
+							name="floor"
+							type="radio"
+							value="Жен"
+						/>
+						<label
+							class="registration-hero__text registration-hero__text--woman"
+							for="woman"
+							>Жен</label
+						>
+					</div>
+					<label class="registration-hero__heading title">Дата рождения*</label>
+					<label class="registration-hero__date" for="date"
+						><input class="registration-hero__radio-date" id="date" type="date"
+					/></label>
+					<label class="registration-hero__heading title"
+						>Семеное положение*</label
+					>
+					<div class="registration-hero__family">
+						<input
+							class="radio radio--married"
+							id="Yes"
+							name="family"
+							type="radio"
+							value="Женат/Замужем"
+						/>
+						<label
+							class="registration-hero__text registration-hero__text--married"
+							for="Yes"
+							>Женат/Замужем</label
+						>
+						<input
+							class="radio radio--unmarried"
+							id="No"
+							name="family"
+							type="radio"
+							value="Не&nbsp;женат/&nbsp;Не замужем"
+						/>
+						<label
+							class="registration-hero__text registration-hero__text--unmarried"
+							for="No"
+							>Не&nbsp;женат/&nbsp;Не замужем</label
+						>
+					</div>
+					<label class="registration-hero__heading title" for="name"
+						>Имя*</label
+					>
+					<input
+						class="registration-hero__name input"
+						id="name"
+						name="registration-name"
+						type="text"
+						placeholder="Михаил"
+					/>
+					<label class="registration-hero__heading title" for="surname"
+						>Фамилия (не&nbsp;обязательно)</label
+					>
+					<input
+						class="registration-hero__surname input"
+						id="surname"
+						name="registration-surname"
+						type="text"
+						placeholder="Иванов"
+					/>
+					<label class="registration-hero__heading title" for="patronymic"
+						>Отчество (не&nbsp;обязательно)</label
+					>
+					<input
+						class="registration-hero__patronymic input"
+						id="patronymic"
+						name="registration-patronymic"
+						type="text"
+						placeholder="Иванович"
+					/>
+					<label
+						class="registration-hero__heading registration-hero__heading--citizenship-arrow title"
+						>Гражданство*</label
+					>
+					<select
+						class="registration-hero__citizenship input"
+						name="citizenship"
+						aria-placeholder="РФ"
+					>
+						<option value="Russia">Российская Федерация</option>
+						<option value="Kazakhstan">Казахстан</option>
+						<option value="Belarus">Беларусь</option>
+						<option value="Ukraine">Украина</option>
+					</select>
+					<label
+						class="registration-hero__heading registration-hero__heading--region-arrow title"
+						>Регион проживания*</label
+					>
+					<select
+						class="registration-hero__region input"
+						name="region"
+						aria-placeholder="Регион"
+					>
+						<option value="Volgograd">Волгоградская область</option>
+						<option value="Zabaikalsk">Забайкальский край</option>
+						<option value="Irkutsk">Иркутская область</option>
+					</select>
+					<label class="registration-hero__heading title" for="mail"
+						>Адрес электронной почты*</label
+					>
+					<input
+						class="registration-hero__email input"
+						id="mail"
+						name="registration-email"
+						type="email"
+						placeholder="Kjoon@mail.ru"
+					/>
+					<label class="registration-hero__heading title" for="number"
+						>Номер телефона*</label
+					>
+					<input
+						class="registration-hero__phone input"
+						id="number"
+						name="phone"
+						type="tel"
+						placeholder="+7 (931) 123 45 67"
+					/>
+					<div class="registration-hero__inner">
+						<label
+							class="registration-hero__heading registration-hero__heading--no-margin title"
+							for="password"
+							>Пароль*</label
+						>
+						<button class="registration-hero__btn btn-reset">
+							Создать сложный пароль
+						</button>
+					</div>
+					<input
+						class="registration-hero__password input"
+						id="password"
+						name="password"
+						type="password"
+					/>
+					<input
+						class="registration-hero__btn-submit btn-reset link-blue"
+						name="submit"
+						type="submit"
+						value="Зарегистрироваться"
+					/>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
