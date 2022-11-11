@@ -5030,7 +5030,8 @@ body {
 }
 
 .news {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .news {
@@ -5155,6 +5156,23 @@ body {
 }
 .news__link:hover::after {
   background-color: #2C3136;
+}
+
+.questions {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.questions__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.questions__title {
+  margin-bottom: 45px;
 }
 
 .footer {
@@ -5449,5 +5467,74 @@ body {
 }
 .registration-hero__btn:hover::after {
   border-top: 1px solid inherit;
+}
+
+.spollers__item {
+  margin-bottom: 10px;
+  padding: 25px 0;
+  padding-left: 70px;
+  background-color: transparent;
+  position: relative;
+}
+.spollers__item:last-child {
+  margin-bottom: 0;
+}
+.spollers__item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 1px solid #000000;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+.spollers__title {
+  font-family: "Raleway-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  color: #034FBC;
+}
+.spollers__text {
+  padding-top: 5px;
+  line-height: 130%;
+  color: #034FBC;
+}
+.spollers.init .spollers__title::before, .spollers.init .spollers__title::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 15px;
+  width: 15px;
+  border-top: 2px solid #034FBC;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+.spollers.init .spollers__title::after {
+  left: -49px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.spollers.init .spollers__title.active::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.spollers.init .spollers__title::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.spollers.init .spollers__title.active::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=style.min.css.map */
