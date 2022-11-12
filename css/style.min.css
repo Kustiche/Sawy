@@ -4692,8 +4692,11 @@ body {
 }
 @media screen and (max-width: 705px) {
   .about__card-inner {
+    margin-right: 10px;
     margin-bottom: 0;
     gap: 0 10px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 }
 .about__card {
@@ -4707,8 +4710,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   padding: 40px;
   max-width: 584px;
   width: 100%;
@@ -4718,17 +4719,19 @@ body {
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .about__card {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__card {
     max-width: 365px;
   }
 }
 @media screen and (max-width: 705px) {
   .about__card {
     max-width: 310px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
   }
 }
 .about__content {
@@ -5289,6 +5292,7 @@ body {
           flex-direction: column;
 }
 .registration-hero__title {
+  margin-bottom: 40px;
   font-family: "OpenSans-Bold", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -5302,15 +5306,40 @@ body {
   width: 100%;
 }
 .registration-hero__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
   margin-right: 70px;
+  padding-bottom: 50px;
   width: 220px;
   height: 220px;
+  border: 1px solid #D6D6D6;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .registration-hero__file {
+  display: none;
   width: 220px;
   height: 220px;
   border: 1px solid #D6D6D6;
   outline: none;
+}
+.registration-hero__user-photo {
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  top: 53px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .registration-hero__text {
   line-height: 120%;
@@ -5337,6 +5366,7 @@ body {
           align-items: flex-start;
   max-width: 525px;
   width: 100%;
+  padding-top: 20px;
 }
 .registration-hero__heading {
   margin-bottom: 10px;
