@@ -70,48 +70,6 @@
     color: inherit
     &--no-margin
       margin-bottom: 0
-    &--citizenship-arrow
-      position: relative
-      &::after, &::before
-        position: absolute
-        content: ""
-        width: 13px
-        border-top: 1px solid $addey
-        top: 60px
-        left: 483px
-        z-index: 1
-        transform: rotate(45deg)
-      &::before
-        top: 60px
-        left: 493px
-        transform: rotate(-45deg)
-    &--region-arrow
-      position: relative
-      &::after, &::before
-        position: absolute
-        content: ""
-        width: 13px
-        border-top: 1px solid $addey
-        top: 60px
-        left: 483px
-        z-index: 1
-        transform: rotate(45deg)
-      &::before
-        top: 60px
-        left: 493px
-        transform: rotate(-45deg)
-
-  &__citizenship:checked .registration-hero__heading--citizenship-arrow
-    &::after
-      transform: rotate(45deg)
-    &::before
-      transform: rotate(-45deg)
-
-  &__region:checked .registration-hero__heading--region-arrow
-    &::after
-      transform: rotate(45deg)
-    &::before
-      transform: rotate(-45deg)
 
   &__floor
     display: flex
@@ -164,6 +122,48 @@
     max-width: 395px
     width: 100%
     margin-bottom: 30px
+
+  &__inner-citizenship
+    margin-bottom: 30px
+    width: 100%
+    position: relative
+    &::after, &::before
+      position: absolute
+      content: ""
+      width: 13px
+      border-top: 1px solid $addey
+      top: 50%
+      right: 31px
+      z-index: 1
+      transform: rotate(45deg)
+    &::before
+      top: 50%
+      right: 22px
+      transform: rotate(-45deg)
+
+  &__citizenship
+    margin-bottom: 0
+
+  &__inner-region
+    margin-bottom: 30px
+    width: 100%
+    position: relative
+    &::after, &::before
+      position: absolute
+      content: ""
+      width: 13px
+      border-top: 1px solid $addey
+      top: 50%
+      right: 31px
+      z-index: 1
+      transform: rotate(45deg)
+    &::before
+      top: 50%
+      right: 22px
+      transform: rotate(-45deg)
+
+  &__region
+    margin-bottom: 0
 
   &__inner
     display: flex
