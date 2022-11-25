@@ -192,3 +192,21 @@ data-spollers="768,min" - спойлеры будут работать толь�
 
 Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
 */
+let year = document.getElementById('year')
+let month = document.getElementById('month')
+let day = document.getElementById('day')
+
+for (year = 1922; year <= 2022; year++) {
+  let options = document.createElement("OPTION");
+  document.getElementById("year").appendChild(options).innerHTML = year;
+}
+
+for (month = 1; month <= 12; month++) {
+  let options = document.createElement("OPTION");
+  document.getElementById("month").appendChild(options).innerHTML = month;
+}
+
+for (day = 1; day <= 31; day++) {
+  let options = document.createElement("OPTION");
+  document.getElementById("day").appendChild(options).innerHTML = day;
+}

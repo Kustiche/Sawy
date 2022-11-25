@@ -78,12 +78,12 @@
         width: 13px
         border-top: 1px solid $addey
         top: 60px
-        left: 545px
+        left: 483px
         z-index: 1
         transform: rotate(45deg)
       &::before
         top: 60px
-        left: 555px
+        left: 493px
         transform: rotate(-45deg)
     &--region-arrow
       position: relative
@@ -93,31 +93,13 @@
         width: 13px
         border-top: 1px solid $addey
         top: 60px
-        left: 545px
+        left: 483px
         z-index: 1
         transform: rotate(45deg)
       &::before
         top: 60px
-        left: 555px
+        left: 493px
         transform: rotate(-45deg)
-
-  &__floor
-    display: flex
-    justify-content: space-between
-    align-items: center
-    max-width: 155px
-    width: 100%
-    margin-bottom: 30px
-
-  &__date
-
-  &__family
-    display: flex
-    justify-content: space-between
-    align-items: center
-    max-width: 395px
-    width: 100%
-    margin-bottom: 30px
 
   &__citizenship:checked .registration-hero__heading--citizenship-arrow
     &::after
@@ -131,9 +113,57 @@
     &::before
       transform: rotate(-45deg)
 
-  &__email
+  &__floor
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 155px
+    width: 100%
+    margin-bottom: 30px
 
-  &__phone
+  &__date
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 285px
+    width: 100%
+    margin-bottom: 30px
+
+  &__inner-radio
+    position: relative
+    &::after, &::before
+      position: absolute
+      content: ""
+      width: 13px
+      border-top: 1px solid $addey
+      top: 50%
+      right: 24px
+      z-index: 1
+      transform: rotate(45deg)
+    &::before
+      right: 15px
+      transform: rotate(-45deg)
+    &--further
+      &::after, &::before
+        top: 50%
+        right: 29px
+      &::before
+        right: 20px
+
+  &__radio-date
+    margin-bottom: 0
+    padding: 15px
+    width: 75px
+    &--wide
+      width: 105px
+
+  &__family
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 395px
+    width: 100%
+    margin-bottom: 30px
 
   &__inner
     display: flex
