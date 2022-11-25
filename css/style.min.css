@@ -5295,6 +5295,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 375px) {
+  .registration-hero__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .registration-hero__title {
   margin-bottom: 40px;
   font-family: "OpenSans-Bold", sans-serif;
@@ -5303,11 +5310,32 @@ body {
   line-height: 44px;
   color: #000000;
 }
+@media screen and (max-width: 375px) {
+  .registration-hero__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
 .registration-hero__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+@media screen and (max-width: 850px) {
+  .registration-hero__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .registration-hero__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .registration-hero__avatar {
   display: -webkit-box;
@@ -5327,6 +5355,11 @@ body {
   border: 1px solid #D6D6D6;
   border-radius: 50%;
   cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .registration-hero__avatar {
+    margin-right: 0;
+  }
 }
 .registration-hero__file {
   display: none;
@@ -5350,12 +5383,6 @@ body {
 }
 .registration-hero__text--grey {
   color: #757575;
-}
-.registration-hero__text--man {
-  margin-right: 25px;
-}
-.registration-hero__text--married {
-  margin-right: 25px;
 }
 .registration-hero__content {
   display: -webkit-box;
@@ -5394,6 +5421,19 @@ body {
   max-width: 155px;
   width: 100%;
   margin-bottom: 30px;
+}
+.registration-hero__floor-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 65px;
+  width: 100%;
 }
 .registration-hero__date {
   display: -webkit-box;
@@ -5458,6 +5498,38 @@ body {
   max-width: 395px;
   width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 425px) {
+  .registration-hero__family {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.registration-hero__family-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 155px;
+  width: 100%;
+}
+.registration-hero__family-inner--wide {
+  max-width: 203px;
+}
+@media screen and (max-width: 425px) {
+  .registration-hero__family-inner {
+    margin-bottom: 20px;
+  }
+  .registration-hero__family-inner:last-child {
+    margin-bottom: 0;
+  }
 }
 .registration-hero__inner-citizenship {
   margin-bottom: 30px;
@@ -5547,6 +5619,11 @@ body {
 }
 .registration-hero__btn:hover::after {
   border-top: 1px solid inherit;
+}
+@media screen and (max-width: 375px) {
+  .registration-hero__btn-submit {
+    margin: 0 auto;
+  }
 }
 
 .spollers__item {

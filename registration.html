@@ -103,32 +103,36 @@
 					/>
 					<label class="registration-hero__heading title">Пол*</label>
 					<div class="registration-hero__floor">
-						<input
-							class="radio radio--man"
-							id="man"
-							name="floor"
-							type="radio"
-							value="Муж"
-							required
-						/>
-						<label
-							class="registration-hero__text registration-hero__text--man"
-							for="man"
-							>Муж</label
-						>
-						<input
-							class="radio radio--woman"
-							id="woman"
-							name="floor"
-							type="radio"
-							value="Жен"
-							required
-						/>
-						<label
-							class="registration-hero__text registration-hero__text--woman"
-							for="woman"
-							>Жен</label
-						>
+						<div class="registration-hero__floor-inner">
+							<input
+								class="radio radio--man"
+								id="man"
+								name="floor"
+								type="radio"
+								value="Муж"
+								required
+							/>
+							<label
+								class="registration-hero__text registration-hero__text--man"
+								for="man"
+								>Муж</label
+							>
+						</div>
+						<div class="registration-hero__floor-inner">
+							<input
+								class="radio radio--woman"
+								id="woman"
+								name="floor"
+								type="radio"
+								value="Жен"
+								required
+							/>
+							<label
+								class="registration-hero__text registration-hero__text--woman"
+								for="woman"
+								>Жен</label
+							>
+						</div>
 					</div>
 					<label class="registration-hero__heading title" for="day"
 						>Дата рождения*</label
@@ -162,35 +166,37 @@
 						</div>
 					</label>
 					<label class="registration-hero__heading title"
-						>Семеное положение*</label
+						>Семейное положение*</label
 					>
 					<div class="registration-hero__family">
-						<input
-							class="radio radio--married"
-							id="Yes"
-							name="family"
-							type="radio"
-							value="Женат/Замужем"
-							required
-						/>
-						<label
-							class="registration-hero__text registration-hero__text--married"
-							for="Yes"
-							>Женат/Замужем</label
+						<div class="registration-hero__family-inner">
+							<input
+								class="radio radio--married"
+								id="Yes"
+								name="family"
+								type="radio"
+								value="Женат/Замужем"
+								required
+							/>
+							<label class="registration-hero__text" for="Yes"
+								>Женат/Замужем</label
+							>
+						</div>
+						<div
+							class="registration-hero__family-inner registration-hero__family-inner--wide"
 						>
-						<input
-							class="radio radio--unmarried"
-							id="No"
-							name="family"
-							type="radio"
-							value="Не&nbsp;женат/&nbsp;Не замужем"
-							required
-						/>
-						<label
-							class="registration-hero__text registration-hero__text--unmarried"
-							for="No"
-							>Не&nbsp;женат/&nbsp;Не замужем</label
-						>
+							<input
+								class="radio radio--unmarried"
+								id="No"
+								name="family"
+								type="radio"
+								value="Не&nbsp;женат/&nbsp;Не замужем"
+								required
+							/>
+							<label class="registration-hero__text" for="No"
+								>Не&nbsp;женат/&nbsp;Не замужем</label
+							>
+						</div>
 					</div>
 					<label class="registration-hero__heading title" for="name"
 						>Имя*</label
