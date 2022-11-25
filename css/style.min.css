@@ -5381,70 +5381,6 @@ body {
 .registration-hero__heading--no-margin {
   margin-bottom: 0;
 }
-.registration-hero__heading--citizenship-arrow {
-  position: relative;
-}
-.registration-hero__heading--citizenship-arrow::after, .registration-hero__heading--citizenship-arrow::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  border-top: 1px solid #54585D;
-  top: 60px;
-  left: 483px;
-  z-index: 1;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.registration-hero__heading--citizenship-arrow::before {
-  top: 60px;
-  left: 493px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.registration-hero__heading--region-arrow {
-  position: relative;
-}
-.registration-hero__heading--region-arrow::after, .registration-hero__heading--region-arrow::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  border-top: 1px solid #54585D;
-  top: 60px;
-  left: 483px;
-  z-index: 1;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.registration-hero__heading--region-arrow::before {
-  top: 60px;
-  left: 493px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.registration-hero__citizenship:checked .registration-hero__heading--citizenship-arrow::after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.registration-hero__citizenship:checked .registration-hero__heading--citizenship-arrow::before {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.registration-hero__region:checked .registration-hero__heading--region-arrow::after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.registration-hero__region:checked .registration-hero__heading--region-arrow::before {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
 .registration-hero__floor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5522,6 +5458,60 @@ body {
   max-width: 395px;
   width: 100%;
   margin-bottom: 30px;
+}
+.registration-hero__inner-citizenship {
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+}
+.registration-hero__inner-citizenship::after, .registration-hero__inner-citizenship::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  border-top: 1px solid #54585D;
+  top: 50%;
+  right: 31px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__inner-citizenship::before {
+  top: 50%;
+  right: 22px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__citizenship {
+  margin-bottom: 0;
+}
+.registration-hero__inner-region {
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+}
+.registration-hero__inner-region::after, .registration-hero__inner-region::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  border-top: 1px solid #54585D;
+  top: 50%;
+  right: 31px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__inner-region::before {
+  top: 50%;
+  right: 22px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__region {
+  margin-bottom: 0;
 }
 .registration-hero__inner {
   display: -webkit-box;
