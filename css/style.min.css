@@ -349,6 +349,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -543,10 +544,13 @@ body {
   all: unset;
   margin-bottom: 30px;
   padding: 15px 30px;
+  max-width: 525px;
   width: 100%;
   background-color: #F5F5F5;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .radio {
@@ -5386,7 +5390,7 @@ body {
   width: 13px;
   border-top: 1px solid #54585D;
   top: 60px;
-  left: 545px;
+  left: 483px;
   z-index: 1;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -5394,7 +5398,7 @@ body {
 }
 .registration-hero__heading--citizenship-arrow::before {
   top: 60px;
-  left: 555px;
+  left: 493px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -5408,7 +5412,7 @@ body {
   width: 13px;
   border-top: 1px solid #54585D;
   top: 60px;
-  left: 545px;
+  left: 483px;
   z-index: 1;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -5416,38 +5420,10 @@ body {
 }
 .registration-hero__heading--region-arrow::before {
   top: 60px;
-  left: 555px;
+  left: 493px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-.registration-hero__floor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 155px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-.registration-hero__family {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 395px;
-  width: 100%;
-  margin-bottom: 30px;
 }
 .registration-hero__citizenship:checked .registration-hero__heading--citizenship-arrow::after {
   -webkit-transform: rotate(45deg);
@@ -5468,6 +5444,84 @@ body {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.registration-hero__floor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 155px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.registration-hero__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 285px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.registration-hero__inner-radio {
+  position: relative;
+}
+.registration-hero__inner-radio::after, .registration-hero__inner-radio::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  border-top: 1px solid #54585D;
+  top: 50%;
+  right: 24px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.registration-hero__inner-radio::before {
+  right: 15px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.registration-hero__inner-radio--further::after, .registration-hero__inner-radio--further::before {
+  top: 50%;
+  right: 29px;
+}
+.registration-hero__inner-radio--further::before {
+  right: 20px;
+}
+.registration-hero__radio-date {
+  margin-bottom: 0;
+  padding: 15px;
+  width: 75px;
+}
+.registration-hero__radio-date--wide {
+  width: 105px;
+}
+.registration-hero__family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 395px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .registration-hero__inner {
   display: -webkit-box;

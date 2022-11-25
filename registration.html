@@ -52,8 +52,7 @@
 						></a>
 						<a
 							class="header__link link-blue link-reset"
-							href="registration.html"
-							target="_blank"
+							href="#registration-hero"
 							>Зарегистрироваться</a
 						>
 					</div>
@@ -76,7 +75,7 @@
 	</div>
 </header>
 
-		<main class="main"><section class="registration-hero">
+		<main class="main"><section class="registration-hero" id="registration-hero">
 	<div class="container">
 		<div class="registration-hero__wrap">
 			<h1 class="registration-hero__title title">Регистрация заемщик</h1>
@@ -100,6 +99,7 @@
 						id="login"
 						type="text"
 						placeholder="Michael22"
+						required
 					/>
 					<label class="registration-hero__heading title">Пол*</label>
 					<div class="registration-hero__floor">
@@ -109,6 +109,7 @@
 							name="floor"
 							type="radio"
 							value="Муж"
+							required
 						/>
 						<label
 							class="registration-hero__text registration-hero__text--man"
@@ -121,6 +122,7 @@
 							name="floor"
 							type="radio"
 							value="Жен"
+							required
 						/>
 						<label
 							class="registration-hero__text registration-hero__text--woman"
@@ -128,10 +130,37 @@
 							>Жен</label
 						>
 					</div>
-					<label class="registration-hero__heading title">Дата рождения*</label>
-					<label class="registration-hero__date" for="date"
-						><input class="registration-hero__radio-date" id="date" type="date"
-					/></label>
+					<label class="registration-hero__heading title" for="day"
+						>Дата рождения*</label
+					>
+					<label class="registration-hero__date">
+						<div class="registration-hero__inner-radio">
+							<select
+								class="registration-hero__radio-date input"
+								id="day"
+								name="day"
+								required
+							></select>
+						</div>
+						<div class="registration-hero__inner-radio">
+							<select
+								class="registration-hero__radio-date input"
+								id="month"
+								name="month"
+								required
+							></select>
+						</div>
+						<div
+							class="registration-hero__inner-radio registration-hero__inner-radio--further"
+						>
+							<select
+								class="registration-hero__radio-date registration-hero__radio-date--wide input"
+								id="year"
+								name="year"
+								required
+							></select>
+						</div>
+					</label>
 					<label class="registration-hero__heading title"
 						>Семеное положение*</label
 					>
@@ -142,6 +171,7 @@
 							name="family"
 							type="radio"
 							value="Женат/Замужем"
+							required
 						/>
 						<label
 							class="registration-hero__text registration-hero__text--married"
@@ -154,6 +184,7 @@
 							name="family"
 							type="radio"
 							value="Не&nbsp;женат/&nbsp;Не замужем"
+							required
 						/>
 						<label
 							class="registration-hero__text registration-hero__text--unmarried"
@@ -170,6 +201,7 @@
 						name="registration-name"
 						type="text"
 						placeholder="Михаил"
+						required
 					/>
 					<label class="registration-hero__heading title" for="surname"
 						>Фамилия (не&nbsp;обязательно)</label
@@ -199,6 +231,7 @@
 						class="registration-hero__citizenship input"
 						name="citizenship"
 						aria-placeholder="РФ"
+						required
 					>
 						<option value="Russia">Российская Федерация</option>
 						<option value="Kazakhstan">Казахстан</option>
@@ -213,6 +246,7 @@
 						class="registration-hero__region input"
 						name="region"
 						aria-placeholder="Регион"
+						required
 					>
 						<option value="Volgograd">Волгоградская область</option>
 						<option value="Zabaikalsk">Забайкальский край</option>
@@ -227,6 +261,7 @@
 						name="registration-email"
 						type="email"
 						placeholder="Kjoon@mail.ru"
+						required
 					/>
 					<label class="registration-hero__heading title" for="number"
 						>Номер телефона*</label
@@ -237,6 +272,7 @@
 						name="phone"
 						type="tel"
 						placeholder="+7 (931) 123 45 67"
+						required
 					/>
 					<div class="registration-hero__inner">
 						<label
@@ -253,6 +289,7 @@
 						id="password"
 						name="password"
 						type="password"
+						required
 					/>
 					<input
 						class="registration-hero__btn-submit btn-reset link-blue"
@@ -270,7 +307,7 @@
 	<div class="container">
 		<div class="footer__wrap">
 			<div class="footer__content">
-				<a class="logo" href="index.html">
+				<a class="logo" href="#header">
 					<svg class="logo__img logo__img--white">
 						<use xlink:href="img/svg/sprite.svg#logo"></use>
 					</svg>
@@ -278,7 +315,7 @@
 				<nav class="nav">
 					<ul class="nav__menu menu menu--bottom list-reset">
 						<li class="menu__item menu__item--white">
-							<a class="menu__link link-reset" href="#/">Подать объявление</a>
+							<a class="menu__link link-reset" href="#/">Подать объявление </a>
 						</li>
 						<li class="menu__item menu__item--white">
 							<a class="menu__link link-reset" href="#/">Все объявления</a>
@@ -305,4 +342,5 @@
 </footer>
 
 	</body>
+	<script src="js/scripts.js"></script>
 </html>
