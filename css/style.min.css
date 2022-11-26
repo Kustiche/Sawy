@@ -5295,7 +5295,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .registration-hero__wrap {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5330,7 +5330,7 @@ body {
             flex-direction: column;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .registration-hero__form {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5620,7 +5620,7 @@ body {
 .registration-hero__btn:hover::after {
   border-top: 1px solid inherit;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .registration-hero__btn-submit {
     margin: 0 auto;
   }
